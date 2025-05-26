@@ -25,13 +25,3 @@ def sum():
         print(sum)
 
 sum()
-
-# Seconda funzione
-def f():
-        b = 0
-        if b == 1:
-                return 1
-        else:
-                return "ciao"
-        
-print(f())
