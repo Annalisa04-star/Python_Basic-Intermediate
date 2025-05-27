@@ -21,14 +21,14 @@ else:                              #altrimenti in tutti gli altri casi faccio al
 
 #----------------------------------------------------------------------inizio funzione--------------------------------------------------------
 
-def somma():                            #definisco la funzione somma
-    primnum= input ("inserisci n1: ")   #inserisco in input un numero a primnum
-    secnum= input ("inserisci 2:")      #inserisco in input un numero a secnum. tutti i dati presi da input() sono inizialmente di tipo sting..
-                                        #perciò vanno convertiti in diverso tipo se servono int, float ecc
-    somma= int(primnum) + int(secnum)   #creo la variabile somma che è il risultato della somma di primnum e secnum convertiti in int
-    risultato= f"La somma è: {somma}"   #creo la variabile testuale risultato che è una fstring contenente testo + somma
-    return risultato                    #imposto il return su risultato così da restituire il suo valore quando la funzione termina
-                                        #il return poi si reimposta in un valore null
+def somma():                                         #definisco la funzione somma
+    primnum= input ("inserisci il primo numero: ")   #inserisco in input un numero a primnum
+    secnum= input ("inserisci il secondo numero: ")  #inserisco in input un numero a secnum. tutti i dati presi da input() sono inizialmente di tipo sting..
+                                                     #perciò vanno convertiti in diverso tipo se servono int, float ecc
+    somma= int(primnum) + int(secnum)                #creo la variabile somma che è il risultato della somma di primnum e secnum convertiti in int
+    risultato= f"La somma è: {somma}"                #creo la variabile testuale risultato che è una fstring contenente testo + somma
+    return risultato                                 #imposto il return su risultato così da restituire il suo valore quando la funzione termina
+                                                     #il return poi si reimposta in un valore null
 
 #----------------------------------------------------------------------fine funzione--------------------------------------------------------
 
