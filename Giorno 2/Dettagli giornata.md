@@ -31,6 +31,6 @@
 10. Uso di `round()` e `abs()`
 11. Interazione tra variabili di tipi diversi
 12. Debugging esercizi
-13. Quiz a scelta multipla interattivo
+13. Quiz a scelta multipla interattivo (https://docs.google.com/forms/d/e/1FAIpQLSf56ZLArOlvSfUpRBWAL0uHfG-ui9QxSbw8Tku_Az4iI5PqCg/viewform?usp=dialog)
 14. Confronto tra stringhe: ==, !=
 15. Riepilogo esercizi svolti
