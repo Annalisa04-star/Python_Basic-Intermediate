@@ -1,3 +1,4 @@
+### Giorno 1
 - **Teoria: Introduzione a Python**
 
 1. Titolo e obiettivi della lezione
