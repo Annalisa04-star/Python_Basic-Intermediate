@@ -24,15 +24,18 @@ def geometry_calculator():
                         height = input("Height: ")
                         if MZ_utils.is_input_float(height) == False:
                                 continue
-                        area = get_rectangle_area(MZ_utils.to_float(base), MZ_utils.to_float(height))
-                        perimeter = get_rectangle_perimeter(MZ_utils.to_float(base), MZ_utils.to_float(height))
+                        base_f = MZ_utils.to_float(base)
+                        height_f = MZ_utils.to_float(height)
+                        area = get_rectangle_area(base_f, height_f)
+                        perimeter = get_rectangle_perimeter(base_f, height_f)
                 
                 case "2":
                         radius = input("Radius: ")
                         if MZ_utils.is_input_float(radius) == False:
                                 continue
-                        area = get_circle_area(MZ_utils.to_float(radius))
-                        perimeter = get_circle_perimeter(MZ_utils.to_float(radius))
+                        radius_f = MZ_utils.to_float(radius)
+                        area = get_circle_area(radius_f)
+                        perimeter = get_circle_perimeter(radius_f)
                 
                 case "3":
                         side_1 = input("Side 1: ")
@@ -44,10 +47,13 @@ def geometry_calculator():
                         side_3 = input("Side 3: ")
                         if MZ_utils.is_input_float(side_3) == False:
                                 continue
-                        if is_valid_triangle(MZ_utils.to_float(side_1), MZ_utils.to_float(side_2), MZ_utils.to_float(side_3)) == False:
+                        side_1_f = MZ_utils.to_float(side_1)
+                        side_2_f = MZ_utils.to_float(side_2)
+                        side_3_f = MZ_utils.to_float(side_3)
+                        if is_valid_triangle(side_1_f, side_2_f, side_3_f) == False:
                                 continue
-                        area = get_triangle_area(MZ_utils.to_float(side_1), MZ_utils.to_float(side_2), MZ_utils.to_float(side_3))
-                        perimeter = get_triangle_perimeter(side_1, side_2, side_3)
+                        area = get_triangle_area(side_1_f, side_2_f, side_3_f)
+                        perimeter = get_triangle_perimeter(side_1_f, side_2_f, side_3_f)
 
                 case _:
                         break

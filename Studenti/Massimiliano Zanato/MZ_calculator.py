@@ -13,12 +13,12 @@ def calculator():
                 continue
         a = input("First number: ")
         b = input("Second number: ")
+        if MZ_utils.is_input_float(a) == False:
+               continue
         n_a = MZ_utils.to_float(a)
-        if MZ_utils.is_input_float(n_a) == False:
+        if MZ_utils.is_input_float(b) == False:
                continue
         n_b = MZ_utils.to_float(b)
-        if MZ_utils.is_input_float(n_b) == False:
-               continue
         if (operation == "4" or operation == "5" or operation == "6") and n_b == 0.0:
                 print(f"Invalid operation, cannot divide by zero")
                 continue
