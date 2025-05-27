@@ -3,10 +3,11 @@ def calculator():
      print("---------------------------\nWelcome to the calculator!")
 
      while True:
-        operation = input("---------------------------\nChoose the operation:\n1. Sum\n2. Subtraction\n3. Multiplication\n4. Division\nE. Exit\nSelected operation: ")
+        operation = input("---------------------------\nChoose the operation:\n1. Sum\n2. Subtraction\n3. Multiplication\n4. Real division\n" \
+                "5. Integer division\n6. Remainder of the division\nE. Exit\nSelected operation: ")
         if operation == "E":
                break
-        if operation != "1" and operation != "2" and operation != "3" and operation != "4":
+        if operation != "1" and operation != "2" and operation != "3" and operation != "4" and operation != "5" and operation != "6":
                 print_error("Invalid operation")
                 continue
         a = input("First number: ")
@@ -19,7 +20,7 @@ def calculator():
         if n_b == None:
                 print(f"Invalid input, is not a number: {b}")
                 continue
-        if operation == "4" and n_b == 0.0:
+        if (operation == "4" or operation == "5" or operation == "6") and n_b == 0.0:
                 print(f"Invalid operation, cannot divide by zero")
                 continue
         
@@ -37,6 +38,12 @@ def calculator():
 
                 case "4":
                         result = n_a / n_b
+
+                case "5":
+                        result = n_a // n_b
+
+                case "6":
+                        result = n_a % n_b
 
                 case _:
                         break
