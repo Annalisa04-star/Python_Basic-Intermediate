@@ -18,16 +18,16 @@ def temperature_convertitor():
         p = input("Precision (number of decimal cipher): ")
         if MZ_utils.is_input_int(p) == False:
                continue
-        p_f = MZ_utils.to_int(p)
+        p_i = MZ_utils.to_int(p)
         
         result = ""
 
         match operation:
                 case "1":
-                        result = to_fahrenheit(t_f, p_f)
+                        result = to_fahrenheit(t_f, p_i)
                 
                 case "2":
-                        result = to_celsius(t_f, p_f)
+                        result = to_celsius(t_f, p_i)
                 
                 case _:
                         break
