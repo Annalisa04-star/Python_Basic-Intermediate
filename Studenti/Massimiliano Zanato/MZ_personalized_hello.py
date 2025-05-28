@@ -4,6 +4,12 @@ def personalized_hello():
      print("---------------------------\nWelcome to the personalized hello application!")
 
      while True:
+        operation = input("---------------------------\nChoose the action:\n1. Create personalized hello\nE. Exit\nSelected operation: ")
+        if operation == "E":
+               break
+        if operation != "1":
+                MZ_utils.print_error("Invalid operation")
+                continue
         name = input("Enter your name: ")
         age = input("Enter your age: ")
 
